@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
     unique: true,
   },
   categoryID: {
-    type: String, // using string like "1"
+    type: String,
     required: true,
   },
   device_identifier: {
