@@ -3,7 +3,7 @@ const router = express.Router();
 const deviceController = require('../controllers/deviceController');
 
 // GET all users
-router.get('/', deviceController.getAll, deviceController.getAllDevices);
+router.get('/', deviceController.getAllDevices);
 
 // GET one user by ID
 router.get('/:id', deviceController.getDeviceById);

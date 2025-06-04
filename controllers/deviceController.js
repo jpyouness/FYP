@@ -31,5 +31,3 @@ exports.createDevice = async (req, res) => {
     res.status(400).json({ error: 'Error creating device' });
   }
 };
- 
-};

@@ -17,6 +17,11 @@ const categorySchema = new mongoose.Schema({
     type: Boolean,
     default: true,
   },
+   themeID: {
+    type: String,
+    required: true,
+    ref: 'Theme'
+  }
 });
 
 module.exports = mongoose.model('Category', categorySchema);

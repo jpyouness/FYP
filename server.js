@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const userRoutes = require('./routes/userRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
-
+const deviceRoutes = require('./routes/deviceRoutes');
+const themeRoutes = require('./routes/themeRoutes');
 
 dotenv.config();
 const app = express();
@@ -20,6 +21,8 @@ mongoose.connect(process.env.MONGO_URI, {
 // Route hookup
 app.use('/api/users', userRoutes); 
 app.use('/api/categories', categoryRoutes);
+app.use('/api/devices', deviceRoutes);
+app.use('/api/themes', themeRoutes);
 
 // Start server
 const PORT = process.env.PORT || 5000;
