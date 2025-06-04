@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  last_active_at: {
+  last_update_at: {
     type: Date,
     default: Date.now,
   },
