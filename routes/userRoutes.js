@@ -17,6 +17,6 @@ router.put('/:id', userController.updateUser);
 // DELETE user by ID
 router.delete('/:id', userController.deleteUser);
 
-
+router.post('/sync', userController.handleMobileSync);
 
 module.exports = router;
